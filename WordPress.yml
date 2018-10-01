@@ -80,3 +80,5 @@
         src: templates/wp-config.php
         dest: /var/www/html/
 
+    - name: change owner and group of folder to allow user to add themes
+      file: path=/var/www/html/wp-content/upgrade/ owner=www-data group=www-data

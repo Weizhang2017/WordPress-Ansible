@@ -9,6 +9,7 @@
         login_password: 123password123
         name: wordpress
         state: present
+        encoding: utf8
 
     - name: create a new user and assgin SELECT permission to the user
       mysql_user:
@@ -16,7 +17,7 @@
         login_password: 123password123
         name: wpuser
         password: 123password123
-        host: 'localhost'
+        host: '127.0.0.1'
         priv: 'wordpress.*:SELECT,GRANT'
         state: present
 

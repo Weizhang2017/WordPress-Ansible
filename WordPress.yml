@@ -17,8 +17,8 @@
         login_password: 123password123
         name: wpuser
         password: 123password123
-        host: '127.0.0.1'
-        priv: 'wordpress.*:SELECT,GRANT'
+        host: 'localhost'
+        priv: 'wordpress.*:ALL,GRANT'
         state: present
 
     - name: restart mysql
